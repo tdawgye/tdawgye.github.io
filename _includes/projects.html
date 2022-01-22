@@ -3,8 +3,8 @@
   <ul class="archive">
     {% for post in site.projects %}
     <li>
-      <time datetime="{{ projects.date | date_to_xmlschema }}">{{ projects.date | date: "%Y-%m-%d" }}</time>
-      <a href="{{ projects.url | relative_url }}">{{ projects.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
